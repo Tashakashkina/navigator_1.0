@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navigator_1_0/presentation/colors.dart';
-import 'package:navigator_1_0/presentation/settings_screen.dart';
+import 'package:navigator_1_0/presentation/deatails_screen.dart';
 
 class HomeWidget extends StatelessWidget {
   const HomeWidget({Key? key}) : super(key: key);
