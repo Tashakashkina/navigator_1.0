@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigator_1_0/presentation/deatails_screen.dart';
 import '../presentation/home_screen.dart';
 
 class NavigatorApp extends StatelessWidget {
@@ -12,7 +13,10 @@ class NavigatorApp extends StatelessWidget {
         primarySwatch: Colors.lightBlue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-     home: const HomeWidget()
+      routes: {
+        '/': (context) => const HomeWidget(),
+        '/details': (context) => const DetailsScreenWidget(),
+      },
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navigator_1_0/presentation/colors.dart';
-import 'package:navigator_1_0/presentation/deatails_screen.dart';
+
 
 class HomeWidget extends StatelessWidget {
   const HomeWidget({Key? key}) : super(key: key);
@@ -17,10 +17,10 @@ class HomeWidget extends StatelessWidget {
             size: 30.0,
           ),
           label: const Text('Перейти'),
-          onPressed: () {Navigator.push(
+         onPressed: () {
+            Navigator.pushNamed(
               context,
-              MaterialPageRoute(builder: (context) {
-                return const DetailsScreenWidget();}));
+              '/details');   
            ElevatedButton.styleFrom(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),

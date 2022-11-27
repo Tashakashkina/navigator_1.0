@@ -7,7 +7,7 @@ class DetailsScreenWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(iconTheme: IconThemeData(color: icons)),
       body: Center(
             child: ElevatedButton.icon(
           icon:  Icon(
